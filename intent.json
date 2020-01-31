@@ -1,0 +1,88 @@
+{
+    "intents": [
+        {
+            "Intent": "Navigate to Senior",
+            "Conditions":{"cobrowse_accepted":"YES",
+                "account_type":"Senior"
+            },
+            "Steps": [{"click" :"personalBanking"},
+                {"click" :"Accounts"},
+                {"click" : "pad"},
+                {"click" : "senior"}
+            ]
+        },
+        {
+            "Intent": "Apply Senior",
+            "Steps": [{"click":"apply"}],
+            "Conditions":{
+                "account_type":"Senior",
+		        "cobrowse_accepted":"YES",
+                "create_account":"YES"
+            }
+        },
+        {
+            "Intent": "Fill Form",
+            "Steps": [{"inputEntry":["NAME","full_name"]},
+				{"inputEntry":["DOB","full_name"]},
+				{"inputEntry":["PHONE","phone_number"]}
+],
+            "Conditions":{"cobrowse_accepted":"YES",
+                "account_type":"Senior",
+                "create_account":"YES",
+                "write_mode_allow": "YES"
+            }
+        },
+        {
+            "Intent": "Senior Detail",
+		    "Steps": [{"click":"details"}],
+            "Conditions":{"cobrowse_accepted":"YES",
+                "account_type":"Senior",
+                "create_account":"NO",
+                "senior_details_navigation": "YES"
+            }
+        },
+        {
+            "Intent": "Fee viewer",
+		 "Steps": [{"scrollandhighlight":"fees"}],
+            "Conditions":{"cobrowse_accepted":"YES",
+                "account_type":"Senior",
+                "create_account":"NO",
+                "senior_details_navigation": "YES",
+		     "fees_and_charges":"true"
+            }
+        },
+        {
+            "Intent": "Fill form afer Fee viewer",
+         "Steps": [{"click" :"personalBanking"},
+                {"click" :"Accounts"},
+                {"click" : "pad"},
+                {"click" : "senior"},
+                {"click":"apply"}
+            ],
+            "Conditions":{"cobrowse_accepted":"YES",
+                "account_type":"Senior",
+                "create_account":"YES",
+                "senior_details_navigation": "YES",
+                "fees_and_charges":"true"
+            }
+        },
+                {
+            "Intent": "Fill Form",
+            "Steps": [{"inputEntry":["NAME","full_name"]},
+                {"inputEntry":["DOB","full_name"]},
+                {"inputEntry":["PHONE","phone_number"]}
+            ],
+            "Conditions":{"cobrowse_accepted":"YES",
+                "account_type":"Senior",
+                "create_account":"YES",
+                "write_mode_allow": "YES",
+                "senior_details_navigation": "YES",
+                "fees_and_charges": "true"
+            }
+        }
+
+
+
+    ]
+
+}
