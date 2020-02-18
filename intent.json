@@ -3,7 +3,8 @@
         {
             "Intent": "Navigate to Senior",
             "Conditions":{"cobrowse_accepted":"YES",
-                "account_type":"Senior"
+                "account_type":"Senior",
+                "previous_session": "NO"
             },
             "Steps": [{"click" :"personalBanking"},
                 {"click" :"Accounts"},
@@ -17,7 +18,8 @@
             "Conditions":{
                 "account_type":"Senior",
 		        "cobrowse_accepted":"YES",
-                "create_account":"YES"
+                "create_account":"YES",
+                "previous_session": "NO"
             }
         },
         {
@@ -29,7 +31,8 @@
             "Conditions":{"cobrowse_accepted":"YES",
                 "account_type":"Senior",
                 "create_account":"YES",
-                "write_mode_allow": "YES"
+                "write_mode_allow": "YES",
+                "previous_session": "NO"
             }
         },
         {
@@ -38,7 +41,8 @@
             "Conditions":{"cobrowse_accepted":"YES",
                 "account_type":"Senior",
                 "create_account":"NO",
-                "senior_details_navigation": "YES"
+                "senior_details_navigation": "YES",
+                "previous_session": "NO"
             }
         },
         {
@@ -48,7 +52,8 @@
                 "account_type":"Senior",
                 "create_account":"NO",
                 "senior_details_navigation": "YES",
-		     "fees_and_charges":"true"
+             "fees_and_charges":"true",
+             "previous_session": "NO"
             }
         },
         {
@@ -63,7 +68,8 @@
                 "account_type":"Senior",
                 "create_account":"YES",
                 "senior_details_navigation": "YES",
-                "fees_and_charges":"true"
+                "fees_and_charges":"true",
+                "previous_session": "NO"
             }
         },
                 {
@@ -77,7 +83,19 @@
                 "create_account":"YES",
                 "write_mode_allow": "YES",
                 "senior_details_navigation": "YES",
-                "fees_and_charges": "true"
+                "fees_and_charges": "true",
+                "previous_session": "NO"
+            }
+        },
+        {
+            "itent": "mutual fund highlighter",
+            "Steps": [{"scrollandhighlight":"mfyes"}],
+            "Conditions":{"account_type": "Senior",
+            "cobrowse_accepted": "YES",
+            "create_account": "YES",
+            "mutual_funds": "true",
+            "previous_session": "NO",
+            "write_mode_allow": "YES"
             }
         }
 
