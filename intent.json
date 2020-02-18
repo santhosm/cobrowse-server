@@ -25,7 +25,7 @@
         {
             "Intent": "Fill Form",
             "Steps": [{"inputEntry":["NAME","full_name"]},
-				{"inputEntry":["DOB","full_name"]},
+				{"inputEntry":["DOB","dob"]},
 				{"inputEntry":["PHONE","phone_number"]}
 ],
             "Conditions":{"cobrowse_accepted":"YES",
@@ -75,7 +75,7 @@
                 {
             "Intent": "Fill Form",
             "Steps": [{"inputEntry":["NAME","full_name"]},
-                {"inputEntry":["DOB","full_name"]},
+                {"inputEntry":["DOB","dob"]},
                 {"inputEntry":["PHONE","phone_number"]}
             ],
             "Conditions":{"cobrowse_accepted":"YES",
