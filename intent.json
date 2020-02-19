@@ -98,6 +98,18 @@
             "previous_session": "NO",
             "write_mode_allow": "YES"
             }
+        },
+        {
+            "intent": "restore",
+            "Steps": [{"click" :"personalBanking"},
+                {"click" :"Accounts"},
+                {"click" : "pad"},
+                {"click" : "senior"},
+                {"scrollandhighlight":"mfyes"}
+            ],
+            "Conditions":{"continue_prev_session": "YES",
+                "previous_session": "YES"
+            }
         }
 
 
