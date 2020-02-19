@@ -89,7 +89,8 @@
         },
         {
             "itent": "mutual fund highlighter",
-            "Steps": [{"scrollandhighlight":"mfyes"}],
+            "Steps": [{"click":"mfyes"},
+                {"scrollandhighlight":"buyNewStocks"}],
             "Conditions":{"account_type": "Senior",
             "cobrowse_accepted": "YES",
             "create_account": "YES",
