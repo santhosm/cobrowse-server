@@ -8,7 +8,6 @@
             },
             "Steps": [{"click" :"personalBanking"},
                 {"click" :"Accounts"},
-                {"click" : "pad"},
                 {"click" : "senior"}
             ]
         },
@@ -60,7 +59,6 @@
             "Intent": "Fill form afer Fee viewer",
          "Steps": [{"click" :"personalBanking"},
                 {"click" :"Accounts"},
-                {"click" : "pad"},
                 {"click" : "senior"},
                 {"click":"apply"}
             ],
@@ -103,7 +101,6 @@
             "intent": "restore",
             "Steps": [{"click" :"personalBanking"},
                 {"click" :"Accounts"},
-                {"click" : "pad"},
                 {"click" : "senior"},
                 {"scrollandhighlight":"mfyes"}
             ],
